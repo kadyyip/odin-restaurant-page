@@ -1,0 +1,5 @@
+function loadContactPage() {
+    
+}
+
+export { loadContactPage }
