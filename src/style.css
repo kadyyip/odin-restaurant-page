@@ -42,11 +42,14 @@ body {
     background-color: #4f662e
 }
 
+.nav ul {
+    display: flex;
+}
+
 ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    display: flex;
 }
 
 .main-img {
@@ -65,6 +68,7 @@ ul {
 }
 
 .section-header {
+    padding: 30px 0 0 0;
     font-size: 30px;
 }
 
@@ -96,4 +100,16 @@ ul {
 
 .quote {
     font-style: italic;
+}
+
+.contact-container {
+    display: flex;
+    gap: 50px;
+    padding: 0 50px 50px 50px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
