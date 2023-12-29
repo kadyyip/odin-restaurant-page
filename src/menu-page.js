@@ -23,10 +23,7 @@ function loadMenuPage() {
     content.appendChild(dessertDiv);
     dessertDiv.classList.add("dessert");
 
-    console.log(myMenu.getMenu());
-
     for (let food of myMenu.getMenu()) {
-        console.log(food);
         if (food.type === "Main") {
             mainDiv.append(createFoodContainerDiv(food));
         } else if (food.type === "Dessert") {

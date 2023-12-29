@@ -1,16 +1,17 @@
 * {
-    font-family: Raleway, Arial, sans-serif;
+    font-family: Raleway, Times, serif;
 }
 
 body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 #header {
-    padding: 0 20px;
-    height: 80px;
+    padding: 0 2vw;
+    height: 10vh;
     background-color: #789949;
     color: #ffffff;
     display: flex;
@@ -20,7 +21,7 @@ body {
 }
 
 #footer {
-    height: 50px;
+    height: 10vh;
     background-color: #789949;
     color: #ffffff;
     display: flex;
@@ -35,7 +36,7 @@ body {
     background-color: transparent;
     font-size: 24px;
     color: #ffffff;
-    padding: 50px 15px;
+    padding: 10vh 1vw;
 }
 
 .nav button:hover {
@@ -63,35 +64,45 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 5vh;
     flex: 1;
 }
 
 .section-header {
-    padding: 30px 0 0 0;
+    padding: 5vh 0 0 0;
     font-size: 30px;
 }
 
 .about {
-    padding: 0 100px;
+    padding: 0 5vw;
+}
+
+.ramen-img {
+    width: 60vw;
 }
 
 .testimonials {
-    margin: 0 100px 50px 100px;
-    display: grid;
+    margin: 0 10vw 5vh 10vw;
+    display: flex;
+    flex-direction: column;
     justify-items: center;
     align-items: center;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px 100px;
 }
 
 .testimonials .section-header {
     grid-column: 1 / -1;
+    margin-bottom: 5vh;
 }
+
+.reviews {
+    display: flex;
+    gap: 5vw;
+}
+
 .review {
-    height: 50px;
+    width: 30vw;
     background-color: #ffffffc0;
-    padding: 30px;
+    padding: 3vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -104,18 +115,24 @@ ul {
 
 .contact-container {
     display: flex;
-    gap: 50px;
-    padding: 0 50px 50px 50px;
+    gap: 5vw;
+    padding: 0 5vw 5vh 5vw;
+}
+
+.map {
+    width: 40vw;
+    height: 60vh;
 }
 
 .contact-info {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 2vh;
+    width: 40vw;
 }
 
 .main, .dessert {
-    padding: 30px 0;
+    padding: 5vh 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
@@ -123,14 +140,15 @@ ul {
 
 .food-container {
     display: flex;
-    gap: 20px;
-    width: 400px;
+    gap: 2vw;
+    width: 35vw;
 }
 
 .food-info {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 20vw;
 }
 
 .food-name {
@@ -138,13 +156,13 @@ ul {
 }
 
 .food-img {
-    border-radius: 10px;
+    border-radius: 1vw;
     background-size: cover;
     background-position: center;
-    min-width: 100px;
-    min-height: 100px;
+    width: 10vw;
+    height: 10vw;
 }
 
 .dessert {
-    padding: 0 0 50px 0;
+    padding: 0 0 10vh 0;
 }

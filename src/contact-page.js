@@ -18,7 +18,7 @@ function loadContactPage() {
     contactInfoDiv.appendChild(telDiv);
     contactInfoDiv.appendChild(hoursDiv);
     hoursDiv.appendChild(hoursUl);
-    contactContainerDiv.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.2184198460354!2d139.56785677515222!3d35.69624232915027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ee34e5038c2d%3A0x4de155903f849205!2sGhibli%20Museum!5e0!3m2!1sen!2sus!4v1703297805063!5m2!1sen!2sus" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
+    contactContainerDiv.innerHTML = '<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.2184198460354!2d139.56785677515222!3d35.69624232915027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ee34e5038c2d%3A0x4de155903f849205!2sGhibli%20Museum!5e0!3m2!1sen!2sus!4v1703297805063!5m2!1sen!2sus" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
     contactContainerDiv.appendChild(contactInfoDiv);
     
 }

@@ -21,8 +21,9 @@ function loadHomePage() {
         est laborum.");
     contentDiv.appendChild(aboutDiv);
 
-    const foodImg = document.createElement("img");
+    const foodImg = createDomElement("img", "ramen-img");
     foodImg.src = ramenImg;
+    console.log(foodImg);
     contentDiv.appendChild(foodImg);
 
     const testimonialsDiv = createDomElement("div", "testimonials");
@@ -30,21 +31,27 @@ function loadHomePage() {
     const testimonialsHeaderDiv = createDomElement("div", "section-header", "testimonials");
     testimonialsDiv.appendChild(testimonialsHeaderDiv);
 
+    const reviewsDiv = createDomElement("div", "reviews");
+
     const reviewsDiv1 = createDomElement("div", "review");
-    testimonialsDiv.appendChild(reviewsDiv1);
+    // testimonialsDiv.appendChild(reviewsDiv1);
     const quoteDiv1 = createDomElement("div", "quote", 
-        "Ghibli's Gourmet is so \cozy and the food is delicious!");
+        "Ghibli's Gourmet is so cozy and the food is delicious!");
     const authorDiv1 = createDomElement("div", "author", "- Kiki");
     reviewsDiv1.appendChild(quoteDiv1);
     reviewsDiv1.appendChild(authorDiv1);
 
     const reviewsDiv2 = createDomElement("div", "review");
-    testimonialsDiv.appendChild(reviewsDiv2);
+    // testimonialsDiv.appendChild(reviewsDiv2);
     const quoteDiv2 = createDomElement("div", "quote", 
         "Ghibli's Gourmet has become my favorite restaurant. Pleasant atmosphere and amazing food.");
     const authorDiv2 = createDomElement("div", "author", "- Sophie");
     reviewsDiv2.appendChild(quoteDiv2);
     reviewsDiv2.appendChild(authorDiv2);
+
+    reviewsDiv.appendChild(reviewsDiv1);
+    reviewsDiv.appendChild(reviewsDiv2);
+    testimonialsDiv.appendChild(reviewsDiv);
 }
 
 function createDomElement(tag, className = null, textContent = "") {
