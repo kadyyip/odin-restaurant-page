@@ -1,7 +1,10 @@
+import mainImage from './img/main.jpeg';
+import ramenImg from './img/ramen.png';
+
 function loadHomePage() {
     const contentDiv = document.querySelector("#content");
     const mainImg = createDomElement("img", "main-img");
-    mainImg.src = "../src/main.jpeg";
+    mainImg.src = mainImage;
     contentDiv.appendChild(mainImg);
 
     const headlineDiv = createDomElement("div", "section-header", "food made with love ♡");
@@ -19,7 +22,7 @@ function loadHomePage() {
     contentDiv.appendChild(aboutDiv);
 
     const foodImg = document.createElement("img");
-    foodImg.src = "../src/ramen.png";
+    foodImg.src = ramenImg;
     contentDiv.appendChild(foodImg);
 
     const testimonialsDiv = createDomElement("div", "testimonials");

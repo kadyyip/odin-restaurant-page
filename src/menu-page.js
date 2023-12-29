@@ -1,3 +1,11 @@
+import bentoBoxImg from './img/bento-box.png';
+import chocolateCakeImg from './img/chocolate-cake.png';
+import eggsAndBaconImg from './img/eggs-and-bacon.png';
+import eggsOnToastImg from './img/eggs-on-toast.png';
+import fishAndCarrotsImg from './img/fish-and-carrots.png';
+import ramenImg from './img/ramen.png';
+import siberiaCakeImg from './img/siberia-cake.png';
+
 function loadMenuPage() {
     const content = document.querySelector("#content");
     const mainHeaderDiv = document.createElement("div");
@@ -33,9 +41,7 @@ function createFoodContainerDiv (food) {
 
     let foodImgDiv = document.createElement("div");
     foodImgDiv.classList.add("food-img");
-    const foodImgPath = `../src/img/${food.name.toLowerCase().replaceAll(" ", "-")}.png`;
-    console.log(foodImgPath);
-    foodImgDiv.style = `background-image: url('${foodImgPath}');`;
+    foodImgDiv.style = `background-image: url('${food.img}');`;
 
     let foodInfoDiv = createFoodInfoDiv(food);
 
@@ -68,8 +74,8 @@ function createFoodInfoDiv (food) {
     return foodInfoDiv;
 }
 
-function createFood (name, price, type, desc) {
-    return { name, price, type, desc };
+function createFood (name, price, type, desc, img) {
+    return { name, price, type, desc, img };
 }
 
 function menu () {
@@ -83,13 +89,13 @@ function menu () {
     return { addToMenu, getMenu };
 }
 
-const bento = createFood("Bento Box", 12, "Main", "Classic bento box filled with rice, sausage, egg, and veggies.");
-const cake = createFood("Chocolate Cake", 25, "Dessert", "Chocolate cake perfect for young witches.");
-const eggsAndBacon = createFood("Eggs and Bacon", 10, "Main", "Sunny-side up eggs with crispy bacon.");
-const eggsOnToast = createFood("Eggs On Toast", 8, "Main", "Sunny-side up eggs over fluffy bread.");
-const fishAndCarrots = createFood("Fish and Carrots", 16, "Main", "Fish served with creamy sauce and carrots.");
-const ramen = createFood("Ramen", 15, "Main", "Ramen served with cha shu pork and hard-boiled egg.");
-const siberiaCake = createFood("Siberia Cake", 10, "Dessert", "Sponge cake with read bean filling.");
+const bento = createFood("Bento Box", 12, "Main", "Classic bento box filled with rice, sausage, egg, and veggies.", bentoBoxImg);
+const cake = createFood("Chocolate Cake", 25, "Dessert", "Chocolate cake perfect for young witches.", chocolateCakeImg);
+const eggsAndBacon = createFood("Eggs and Bacon", 10, "Main", "Sunny-side up eggs with crispy bacon.", eggsAndBaconImg);
+const eggsOnToast = createFood("Eggs On Toast", 8, "Main", "Sunny-side up eggs over fluffy bread.", eggsOnToastImg);
+const fishAndCarrots = createFood("Fish and Carrots", 16, "Main", "Fish served with creamy sauce and carrots.", fishAndCarrotsImg);
+const ramen = createFood("Ramen", 15, "Main", "Ramen served with cha shu pork and hard-boiled egg.", ramenImg);
+const siberiaCake = createFood("Siberia Cake", 10, "Dessert", "Sponge cake with read bean filling.", siberiaCakeImg);
 
 const myMenu = menu();
 myMenu.addToMenu(bento);
