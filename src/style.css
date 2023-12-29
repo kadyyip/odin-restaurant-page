@@ -77,7 +77,7 @@ ul {
 }
 
 .testimonials {
-    margin: 50px 100px;
+    margin: 0 100px 50px 100px;
     display: grid;
     justify-items: center;
     align-items: center;
@@ -112,4 +112,39 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.main, .dessert {
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.food-container {
+    display: flex;
+    gap: 20px;
+    width: 400px;
+}
+
+.food-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.food-name {
+    font-weight: bold;
+}
+
+.food-img {
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    min-width: 100px;
+    min-height: 100px;
+}
+
+.dessert {
+    padding: 0 0 50px 0;
 }
