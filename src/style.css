@@ -96,7 +96,7 @@ ul {
 
 .reviews {
     display: flex;
-    gap: 5vw;
+    gap: 10vw;
 }
 
 .review {
